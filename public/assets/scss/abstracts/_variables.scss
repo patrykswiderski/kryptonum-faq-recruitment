@@ -1,0 +1,40 @@
+//1.FONT
+
+$font-poppins-sans: var(--font-poppins-sans);
+$font-3xs: 8px;
+$font-2xs: 10px;
+$font-xs: 12px;
+$font-sm: 14px;
+$font-md: 16px;
+$font-lg: 18px;
+$font-xl: 20px;
+$font-2xl: 24px;
+$font-3xl: 30px;
+
+$color-text: #181a1f;
+$color-white: #fff;
+$color-gray-50: #ecf1f2;
+$color-gray-60: #e0f1f4;
+$color-gray-80: #cde2e7;
+$color-gray-100: #b9cad0;
+$color-gray-200: #8ea4ac;
+$color-gray-300: #6a838c;
+$color-gray-400: #4e6770;
+$color-gray-500: #3d565f;
+$color-gray-600: #1f3c45;
+$color-gray-700: #0e2932;
+$color-gray-800: #122830;
+$color-gray-900: #071920;
+
+$grid-breakpoints: (
+	xs: 0,
+	xxsm: 350px,
+	xssm: 450px,
+	xsm: 500px,
+	sm: 576px,
+	smd: 650px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+);

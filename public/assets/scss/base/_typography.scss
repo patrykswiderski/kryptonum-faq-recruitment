@@ -1,0 +1,6 @@
+/*TYPOGRAPHY*/
+body {
+  font-family: var(--font-poppins), sans-serif;
+  font-size: clamp(calc(18rem / 16), 24vw/7.68, calc(32rem / 16));
+  position: relative;
+}
