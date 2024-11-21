@@ -1,0 +1,134 @@
+$primary-gradient-400: linear-gradient(to right, #90f4e8, #2dd282);
+$dark-green: #064040;
+$light-gray: #c6cdcc;
+$white: #f0f7f7;
+
+@mixin gradient-text {
+  background: $primary-gradient-400;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.questionsView {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 16px;
+  h2 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35.2px;
+    letter-spacing: -2.25%;
+    margin: 0;
+    img.icon {
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+    span {
+      @include gradient-text;
+    }
+  }
+  .accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        padding: 0;
+      }
+    }
+  }
+  .loadMore {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 100%;
+    max-width: 130px;
+    gap: 4px;
+    height: 92px;
+    .loadBar {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      width: 100%;
+      .boxIndicator {
+        height: 29px;
+        position: relative;
+        .indicator {
+          display: flex;
+          justify-content: center;
+          box-sizing: border-box;
+          width: 50px;
+          background: $dark-green;
+          font-size: 12px;
+          padding: 2px 6px;
+          border-radius: 999px;
+          white-space: nowrap;
+          position: absolute;
+          margin-left: -25px;
+          &:before {
+            content: '';
+            position: absolute;
+            background-color: $dark-green;
+            width: 6px;
+            height: 6px;
+            transform: rotate(45deg);
+            left: 50%;
+            bottom: 0;
+            margin-bottom: -2.5px;
+            margin-left: -3px;
+          }
+          .number {
+            color: $light-gray;
+            line-height: 21px;
+            letter-spacing: 0.015em;
+            span {
+              color: $white;
+            }
+          }
+        }
+      }
+      .bar {
+        width: 100%;
+        height: 1px;
+        border-radius: 2px;
+        background: $dark-green;
+        position: relative;
+        &:before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: var(--bar-length, 0%);
+          background: $primary-gradient-400;
+          border-radius: 2px;
+          z-index: 1;
+        }
+      }
+    }
+    button {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: inherit;
+      font-size: 14px;
+      line-height: inherit;
+      color: inherit;
+      letter-spacing: 0.015em;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+      height: 44px;
+    }
+  }
+}

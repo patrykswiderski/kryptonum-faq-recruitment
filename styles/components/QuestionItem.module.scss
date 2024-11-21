@@ -1,0 +1,78 @@
+$primary-gradient-400: linear-gradient(to right, #90f4e8, #2dd282);
+
+.questionItem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.005em;
+  padding: 8px 0 12px 0;
+  position: relative;
+  &:before {
+    content: '';
+    background: linear-gradient(to right, #90f4e8, #2dd282 50%, #cdc7c6 50%, #cdc7c6);
+    background-size: 200% 100%;
+    background-position: 100% 50%;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    transition: background-position 0.5s ease-out;
+  }
+  &:hover:before {
+    background-position: 0% 50%;
+  }
+  .questionButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    color: #f0f7f7;
+    background: none;
+    border: none;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    padding: 0;
+    font: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
+    .questionNumber {
+      min-width: 20px;
+      color: #c6cdcc;
+      align-self: start;
+    }
+    .questionContent {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      align-items: start;
+      gap: 8px;
+      p {
+        margin: 0;
+        flex: 1;
+      }
+      svg {
+        margin-top: 3px;
+      }
+    }
+  }
+  .answerContainer {
+    padding-left: 32px;
+    overflow: hidden;
+    p {
+      color: #f0f7f7;
+      font-size: 14px;
+      line-height: 24.5px;
+      letter-spacing: 0.015em;
+      margin: 0;
+      padding-bottom: 4px;
+    }
+  }
+}

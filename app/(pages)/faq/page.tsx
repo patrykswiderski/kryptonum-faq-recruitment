@@ -1,8 +1,5 @@
-export default function Home() {
-  return (
-    <div>
-      <main>Initial</main>
-      <footer></footer>
-    </div>
-  );
+import QuestionsView from '@/components/QuestionsView';
+
+export default function FaqPage() {
+  return <QuestionsView />;
 }
