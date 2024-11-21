@@ -4,7 +4,7 @@ import styles from '@/styles/notFound.module.scss';
 
 export const metadata = {
   title: 'Not-Found',
-  description: 'Not-Found',
+  description: 'Kryptonum Not-Found',
 };
 
 export default function page() {
@@ -24,7 +24,7 @@ export default function page() {
             The page you're looking for isn't available. Try to search again or use the go
             to.
           </p>
-          <Link href="/faq" className={styles.homeLink}>
+          <Link href="/" className={styles.homeLink}>
             Go Back to Homepage
             <svg
               fill="none"

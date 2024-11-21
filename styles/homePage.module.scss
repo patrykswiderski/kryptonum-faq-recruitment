@@ -1,0 +1,23 @@
+$primary-gradient-400: linear-gradient(to right, #90f4e8, #2dd282);
+
+.homePage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  .navigateButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    color: black;
+    background: $primary-gradient-400;
+    border: none;
+    border-radius: 2px;
+    padding: 16px 24px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+}

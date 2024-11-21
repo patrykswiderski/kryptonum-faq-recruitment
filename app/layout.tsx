@@ -10,8 +10,8 @@ const PoppinsFont = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: 'Faq',
-  description: 'Kryptonum Faq Page',
+  title: 'Kryptonum',
+  description: 'Kryptonum',
 };
 
 export default function RootLayout({
