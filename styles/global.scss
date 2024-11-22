@@ -1,6 +1,6 @@
-//1.FONT
+/* Variebles */
+$font-poppins-sans: var(--font-poppins);
 
-$font-poppins-sans: var(--font-poppins-sans);
 $font-3xs: 8px;
 $font-2xs: 10px;
 $font-xs: 12px;
@@ -11,8 +11,10 @@ $font-xl: 20px;
 $font-2xl: 24px;
 $font-3xl: 30px;
 
-$color-text: #181a1f;
+$color-text: #f0f7f7;
+$color-background: black;
 $color-white: #fff;
+$color-neutral-400: #c6cdcc;
 $color-gray-50: #ecf1f2;
 $color-gray-60: #e0f1f4;
 $color-gray-80: #cde2e7;
@@ -26,15 +28,26 @@ $color-gray-700: #0e2932;
 $color-gray-800: #122830;
 $color-gray-900: #071920;
 
+/* Breakpoints */
 $grid-breakpoints: (
-	xs: 0,
-	xxsm: 350px,
-	xssm: 450px,
-	xsm: 500px,
-	sm: 576px,
-	smd: 650px,
-	md: 768px,
-	lg: 992px,
-	xl: 1200px,
-	xxl: 1400px,
+  xs: 0,
+  xxsm: 350px,
+  xssm: 450px,
+  xsm: 500px,
+  sm: 576px,
+  smd: 650px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
 );
+
+/* Global Styles */
+body {
+  font-family: $font-poppins-sans, sans-serif;
+  background-color: $color-background;
+  color: $color-text;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

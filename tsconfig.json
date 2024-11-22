@@ -19,14 +19,17 @@
     "plugins": [
       {
         "name": "next"
-      }
+      },
+      { "name": "typescript-plugin-css-modules" }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@app/*": ["./app/*"],
+      "@components/*": ["./components/*"]
     },
     "resolveJsonModule": true,
     "strict": true,
-    "target": "ESNext",
+    "target": "ES2017",
     "verbatimModuleSyntax": true,
     "skipLibCheck": true,
     "esModuleInterop": true

@@ -1,0 +1,52 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+  .containerSub {
+    max-width: 800px;
+    width: 100%;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    .textCenter {
+      text-align: center;
+      .image {
+        max-width: 100%;
+        height: auto;
+      }
+      .heading {
+        font-size: 2rem;
+        color: #333333;
+        margin-top: 1.5rem;
+      }
+      .description {
+        font-size: 1.1rem;
+        color: #666666;
+        margin-top: 1rem;
+      }
+      .homeLink {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 2rem;
+        padding: 0.75rem 1.5rem;
+        background-color: black;
+        color: #ffffff;
+        border-radius: 4px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: background-color 0.3s ease;
+        &:hover {
+          background-color: #000000;
+        }
+        svg {
+          margin-left: 0.5rem;
+          width: 1em;
+          height: 1em;
+        }
+      }
+    }
+  }
+}
