@@ -121,7 +121,7 @@ $white: #f0f7f7;
       gap: 8px;
       font-family: inherit;
       font-size: 14px;
-      line-height: inherit;
+      line-height: 24.5px;
       color: inherit;
       letter-spacing: 0.015em;
       background: none;
@@ -129,6 +129,84 @@ $white: #f0f7f7;
       padding: 0;
       cursor: pointer;
       height: 44px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .questionsView {
+    gap: 32px;
+    padding: 40px 80px;
+    .loadMore {
+      max-width: 138px;
+      gap: 8px;
+      .loadBar {
+        .boxIndicator {
+          height: 32.5px;
+          .indicator {
+            width: 60px;
+            font-size: 14px;
+            padding: 2px 8px;
+            margin-left: -30px;
+            &:before {
+              width: 8.5px;
+              height: 8.5px;
+              margin-bottom: -3.5px;
+              margin-left: -4.25px;
+            }
+            .number {
+              line-height: 24.5px;
+            }
+          }
+        }
+        .bar {
+          height: 2px;
+        }
+      }
+    }
+    button {
+      gap: none;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+  .questionsView {
+    padding: 64px 40px 40px 40px;
+    h2 {
+      font-size: 24px;
+      line-height: 38.4px;
+    }
+    .loadMore {
+      max-width: 130px;
+      gap: 8px;
+      .loadBar {
+        gap: 4px;
+        .boxIndicator {
+          .indicator {
+            width: 50px;
+            font-size: 12px;
+            padding: 2px 6px;
+            margin-left: -25px;
+            &:before {
+              width: 6px;
+              height: 6px;
+              margin-bottom: -2.5px;
+              margin-left: -3px;
+            }
+            .number {
+              line-height: 21px;
+            }
+          }
+        }
+        .bar {
+          height: 1px;
+        }
+      }
+    }
+    button {
+      gap: 12px;
     }
   }
 }
