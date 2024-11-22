@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function page() {
   return (
-    <section className={styles.section}>
+    <section>
       <div className={styles.containerSub}>
         <div className={styles.textCenter}>
           <Image
