@@ -2,11 +2,11 @@ import { useState, useEffect, useRef } from 'react';
 
 const useDelayedLoading = (isLoading: boolean, delay: number = 500): boolean => {
   const [showLoading, setShowLoading] = useState<boolean>(false);
-  const loadingTimerRef = useRef<NodeJS.Timeout | null>(null);
+  const loadingTimerRef = useRef<number | NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     if (isLoading) {
-      loadingTimerRef.current = setTimeout(() => {
+      loadingTimerRef.current = window.setTimeout(() => {
         setShowLoading(true);
       }, delay);
     } else {

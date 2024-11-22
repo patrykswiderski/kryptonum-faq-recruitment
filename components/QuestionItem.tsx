@@ -6,8 +6,8 @@ import AnimatedIcon from './AnimatedIcon';
 
 interface QuestionItemProps {
   number: string;
-  question: string;
-  answer: string;
+  question?: string;
+  answer?: string;
 }
 
 const QuestionItem: React.FC<QuestionItemProps> = ({ number, question, answer }) => {
@@ -16,7 +16,7 @@ const QuestionItem: React.FC<QuestionItemProps> = ({ number, question, answer })
   return (
     <div className={styles.questionItem}>
       <button
-        onClick={toggleIsOpen}
+        onClick={() => toggleIsOpen()}
         aria-expanded={isOpen}
         className={styles.questionButton}
       >

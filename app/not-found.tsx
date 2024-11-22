@@ -7,7 +7,7 @@ export const metadata = {
   description: 'Kryptonum Not-Found',
 };
 
-export default function page() {
+export default function NotFound() {
   return (
     <section>
       <div className={styles.containerSub}>

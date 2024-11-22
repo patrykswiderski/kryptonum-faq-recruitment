@@ -8,7 +8,7 @@ export const metadata = {
   description: 'Kryptonum Error',
 };
 
-export default function page() {
+export default function ErrorBoundary() {
   return (
     <section>
       <div className={styles.containerSub}>
