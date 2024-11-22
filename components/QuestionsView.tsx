@@ -5,6 +5,7 @@ import useFetchQuestions from '@/hooks/useFetchQuestions';
 import useDelayedLoading from '@/hooks/useDelayedLoading';
 import QuestionItem from './QuestionItem';
 import styles from '@/styles/components/QuestionsView.module.scss';
+import stylesLoader from '@/styles/loading.module.scss';
 
 const QuestionsView = memo((): JSX.Element => {
   const { questions, loadMore, loading, error, totalQuestions } = useFetchQuestions();
@@ -15,7 +16,7 @@ const QuestionsView = memo((): JSX.Element => {
     : 0;
 
   if (!loading && questions.length === 0) {
-    return <p>Brak dostępnych pytań.</p>;
+    return <div className={stylesLoader.loader}></div>;
   }
 
   if (error) {
@@ -107,5 +108,7 @@ const QuestionsView = memo((): JSX.Element => {
     </div>
   );
 });
+
+QuestionsView.displayName = 'QuestionsView';
 
 export default QuestionsView;

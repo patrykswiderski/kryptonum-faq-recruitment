@@ -19,10 +19,10 @@ export default function page() {
             alt="Kryptonum - Strona nie znaleziona"
             className={styles.image}
           />
-          <h2 className={styles.heading}>Oops! It looks like you're lost.</h2>
+          <h2 className={styles.heading}>Oops! It looks like you&#39;re lost.</h2>
           <p className={styles.description}>
-            The page you're looking for isn't available. Try to search again or use the go
-            to.
+            The page you&#39;re looking for isn&#39;t available. Try to search again or
+            use the go to.
           </p>
           <Link href="/" className={styles.homeLink}>
             Go Back to Homepage

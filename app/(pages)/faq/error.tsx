@@ -22,8 +22,8 @@ export default function page() {
           />
           <h2 className={styles.heading}>Oops! It looks like something go wrong.</h2>
           <p className={styles.description}>
-            The page you're looking for isn't available at that moment. Try again or use
-            the go to.
+            The page you&#39;re looking for isn&#39;t available at that moment. Try again
+            or use the go to.
           </p>
           <Link href="/faq" className={styles.homeLink}>
             Go Back
