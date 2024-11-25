@@ -13,14 +13,14 @@
   },
   "dependencies": {
     "@sanity/icons": "^3.4.0",
-    "@sanity/image-url": "1",
-    "@sanity/vision": "3",
+    "@sanity/image-url": "1.1.0",
+    "@sanity/vision": "3.62.3",
     "framer-motion": "^11.11.17",
     "next": "14.2.0",
     "next-sanity": "^9.8.12",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sanity": "3"
+    "sanity": "3.62.3"
   },
   "devDependencies": {
     "@types/bun": "latest",

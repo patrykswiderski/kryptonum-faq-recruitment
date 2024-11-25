@@ -1,4 +1,4 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import type { FaqQuestions } from '@/sanity.types';
 import type { QuestionsResponse } from '@/types';
 
@@ -18,6 +18,7 @@ const useFetchQuestions = (): UseFetchQuestionsResult => {
   const [totalQuestions, setTotalQuestions] = useState(0);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
+  const hasFetchedInitial = useRef(false); // Dodano ref
 
   const fetchQuestions = useCallback(async (page: number) => {
     setLoading(true);
@@ -57,7 +58,10 @@ const useFetchQuestions = (): UseFetchQuestionsResult => {
   }, [fetchQuestions, currentPage, questions.length, totalQuestions, loading]);
 
   useEffect(() => {
-    fetchQuestions(1);
+    if (!hasFetchedInitial.current) {
+      fetchQuestions(1);
+      hasFetchedInitial.current = true;
+    }
   }, [fetchQuestions]);
 
   return {

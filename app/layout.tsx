@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { Poppins } from 'next/font/google';
 import '@/styles/global.scss';
+import { SanityLive } from '@/sanity-config/lib/live';
 
 const PoppinsFont = Poppins({
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
@@ -23,6 +24,7 @@ export default function RootLayout({
     <html lang="en">
       <head></head>
       <body className={PoppinsFont.variable}>{children}</body>
+      <SanityLive />
     </html>
   );
 }
