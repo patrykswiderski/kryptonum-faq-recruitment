@@ -46,13 +46,13 @@ $primary-gradient-400: linear-gradient(to right, #90f4e8, #2dd282);
       display: flex;
       width: 20px;
       color: #c6cdcc;
-      align-self: start;
+      align-self: flex-start;
     }
     .questionContent {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      align-items: start;
+      align-items: flex-start;
       gap: 8px;
       flex: 1;
       .questionText {
@@ -95,7 +95,7 @@ $primary-gradient-400: linear-gradient(to right, #90f4e8, #2dd282);
         gap: 64px;
         .animatedIcon {
           display: flex;
-          justify-content: end;
+          justify-content: flex-end;
           width: 62px;
         }
       }

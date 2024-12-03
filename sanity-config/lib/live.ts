@@ -2,7 +2,7 @@ import 'server-only';
 import { defineLive } from 'next-sanity';
 import { client } from './client';
 
-const token = process.env.NEXT_PUBLIC_SANITY_API_READ_TOKEN;
+const token = process.env.SANITY_API_READ_TOKEN;
 if (!token) {
   throw new Error('Missing SANITY_API_READ_TOKEN');
 }
@@ -12,6 +12,6 @@ export const { sanityFetch, SanityLive } = defineLive({
   serverToken: token,
   browserToken: token,
   fetchOptions: {
-    revalidate: 0
-  }
+    revalidate: 0,
+  },
 });
