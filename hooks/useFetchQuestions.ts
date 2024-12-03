@@ -18,8 +18,7 @@ const useFetchQuestions = (): UseFetchQuestionsResult => {
   const [totalQuestions, setTotalQuestions] = useState(0);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
-  const hasFetchedInitial = useRef(false); // Dodano ref
-
+  const hasFetchedInitial = useRef(false);
   const fetchQuestions = useCallback(async (page: number) => {
     setLoading(true);
     try {
